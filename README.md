@@ -1,7 +1,7 @@
 FastWords
 =========
 
-Android app allows quickly looking up a word or phrase from multiple dictionary/lookup sources with minimal UI. 
+This Android app allows quickly looking up a word or phrase from multiple dictionary/lookup sources with minimal UI. 
 
 App stays open on notification bar. To use it, first select a word or phrase of text from within the browser, email or other app and "copy" to clipboard. Then click on FastWords app in notification bar. Clipboard contents will be looked up on remote dictionary sources. 
 
