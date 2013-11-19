@@ -1,7 +1,7 @@
 FastWords
 =========
 
-This Android app allows quickly looking up a word or phrase from multiple dictionary/lookup sources with minimal UI. 
+This Android app allows quickly looking up a word or phrase from multiple dictionary/lookup sources with minimal UI. It sort of works, at least for Urban Dictionary, which is really what it's for.
 
 App stays open on notification bar. To use it, first select a word or phrase of text from within the browser, email or other app and "copy" to clipboard. Then click on FastWords app in notification bar. Clipboard contents will be looked up on remote dictionary sources. 
 
@@ -16,7 +16,15 @@ App stays open on notification bar. To use it, first select a word or phrase of 
 * *WSPWiktionary*: Look up definitions on Wiktionary
 * *WSPDummy*: Dummy static text
 
-TODO: remove deprecated ClipboardManager
+TODO
+====
+* remove deprecated ClipboardManager
+* alter framework for easy async network requests
+* add couple more search providers like wikipedia, imdb etc
+* add settings to select which search providers to display
+* put a bird on it
+* ?
+* $$$ profit $$$
 
 Building
 ========
