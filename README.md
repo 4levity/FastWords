@@ -16,6 +16,7 @@ App stays open on notification bar. To use it, first select a word or phrase of 
 * *WSPWiktionary*: Look up definitions on Wiktionary
 * *WSPDummy*: Dummy static text
 
+TODO: remove deprecated ClipboardManager
 
 Building
 ========
