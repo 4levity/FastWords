@@ -1,36 +1,24 @@
-Conan
-=====
+FastWords
+=========
 
-conan:
-* the app (command line test/debug features for now, swing or html GUI later?)
+Android app allows quickly looking up a word or phrase from multiple dictionary/lookup sources with minimal UI. 
 
-propertytree:
-* tree structure template class
-* each node has a "property" describing what it means and what data type (class) it is
-* an abstract class PropertyTree is provided with no value member
-* an instantiatable class PropertyTreeObjNode is provided 
-* the latter has an Object value; property is used to validate assignment type
-* query functions provide property-to-valueset maps at/below a given node
+App stays open on notification bar. To use it, first select a word or phrase of text from within the browser, email or other app and "copy" to clipboard. Then click on FastWords app in notification bar. Clipboard contents will be looked up on remote dictionary sources. 
 
-mediatree:
-* library using propertytree to represent media files, tags, images etc
-* has node classes for various items
+*NotifyService*: Run in background and maintain active icon in notification bar
 
-specialtypes:
-* many mediatree nodes are valued with native Java types
-* some special types are here
+*SelectWordSearch*: Main foreground activity
 
-stringutils:
-* stuff for strings and bytebuffers
+*ExpandableListAdapterSearch*: User interface is an expandable list. Add new Word Search Providers here.
+
+*WordSearchProvider*: Abstract base class for "word search providers", objects which take a word or short phrase as input and return a definition or other text.
+* *WSPUrbanDict*: Look up definitions on UrbanDictionary.com
+* *WSPWiktionary*: Look up definitions on Wiktionary
+* *WSPDummy*: Dummy static text
+
 
 Building
 ========
 
-developed mostly on openjdk 1.7 / Java SE 7
+eclipse project for Android
 
-build from Eclipse, or use ant
-
-build.xml is generated from Eclipse
-build-custom.xml adds building runnable JAR.
-
-"ant jar" -> creates bin/conan.jar

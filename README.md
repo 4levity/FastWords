@@ -22,3 +22,5 @@ Building
 
 eclipse project for Android
 
+requires library: json-simple v1.1.1 or later (edit project settings to specify location of json-simple jar)
+
